@@ -1,0 +1,136 @@
+Prediction(
+    trajectory={
+        'thought_0': "The user wants to book a flight from SFO to JFK on September 1, 2025, and their name is Adam. Before fetching flight information or booking, I need to retrieve the user's profile to get details like user ID and email, which are required for booking.", 
+        'tool_name_0': 'get_user_info', 
+        'tool_args_0': {'name': 'Adam'}, 
+        'observation_0': '{
+            "user_id": "1",
+            "name": "Adam",
+            "email": "adam@gmail.com"
+        }', 
+        'thought_1': "I have successfully retrieved the user's profile with user ID and email. Now, the user wants to book a flight from SFO to JFK on September 1, 2025. The next step is to fetch the available flight information for that route and date so I can review options and proceed to pick the best one.", 
+        'tool_name_1': 'fetch_flight_info', 
+        'tool_args_1': {
+            'date': {
+                'year': 2025, 
+                'month': 9, 
+                'day': 1, 
+                'hour': 0
+            }, 
+            'origin': 'SFO', 
+            'destination': 'JFK'
+        }, 
+        'observation_1': [
+            '{
+            "flight_id": "DA123",
+            "date_time": {
+                "year": 2025,
+                "month": 9,
+                "day": 1,
+                "hour": 1
+            },
+            "origin": "SFO",
+            "destination": "JFK",
+            "duration": 3.0,
+            "price": 200.0
+            }', 
+            '{
+            "flight_id": "DA125",
+            "date_time": {
+                "year": 2025,
+                "month": 9,
+                "day": 1,
+                "hour": 7
+            },
+            "origin": "SFO",
+            "destination": "JFK",
+            "duration": 9.0,
+            "price": 500.0
+            }'
+        ], 
+        'thought_2': 'I have the list of available flights from the fetch_flight_info tool. There are two options: one with a shorter duration and lower price (DA123), and another with a longer duration and higher price (DA125). The next step is to use the pick_flight tool to select the best one based on factors like price and duration, and then I can proceed to book the selected flight for the user.', 
+        'tool_name_2': 'pick_flight', 
+        'tool_args_2': {
+            'flights': [
+                {
+                    'flight_id': 'DA123', 
+                    'date_time': {
+                        'year': 2025, 
+                        'month': 9, 
+                        'day': 1, 
+                        'hour': 1}, 
+                    'origin': 'SFO', 
+                    'destination': 'JFK', 
+                    'duration': 3.0, 
+                    'price': 200.0
+                }, 
+                {
+                    'flight_id': 'DA125', 
+                    'date_time': {
+                        'year': 2025, 
+                        'month': 9, 
+                        'day': 1, 
+                        'hour': 7
+                    }, 
+                'origin': 'SFO', 
+                'destination': 'JFK', 
+                'duration': 9.0, 
+                'price': 500.0
+                }
+            ]}, 
+        'observation_2': '{
+                "flight_id": "DA123",
+                "date_time": {
+                    "year": 2025,
+                    "month": 9,
+                    "day": 1,
+                    "hour": 1
+                },
+                "origin": "SFO",
+                "destination": "JFK",
+                "duration": 3.0,
+                "price": 200.0
+                }', 
+        'thought_3': "I have the selected flight from the pick_flight tool, which is DA123, and I already have the user's profile information. The next step is to book the itinerary using this flight details and the user profile to complete the user's request.", 
+        'tool_name_3': 'book_itinerary', 
+        'tool_args_3': {
+            'flight': {
+                'flight_id': 'DA123', 
+                'date_time': {'year': 2025, 'month': 9, 'day': 1, 'hour': 1}, 
+                'origin': 'SFO', 
+                'destination': 'JFK', 
+                'duration': 3.0, 
+                'price': 200.0
+            }, 
+            'user_profile': {'user_id': '1', 'name': 'Adam', 'email': 'adam@gmail.com'}
+        }, 
+        'observation_3': ['ztf51pme', 
+            '{
+                "confirmation_number": "ztf51pme",
+                "user_profile": {
+                    "user_id": "1",
+                    "name": "Adam",
+                    "email": "adam@gmail.com"
+                },
+                "flight": {
+                    "flight_id": "DA123",
+                    "date_time": {
+                        "year": 2025,
+                        "month": 9,
+                        "day": 1,
+                        "hour": 1
+                    },
+                    "origin": "SFO",
+                    "destination": "JFK",
+                    "duration": 3.0,
+                    "price": 200.0
+                }
+            }'], 
+        'thought_4': 'The flight has been successfully booked for the user, as confirmed by the observation with the confirmation number "ztf51pme". All required steps are complete, so I can now finish the task.', 
+        'tool_name_4': 'finish', 
+        'tool_args_4': {}, 
+        'observation_4': 'Completed.'
+    },
+    reasoning="The user's request to book a flight from SFO to JFK on September 1, 2025, has been successfully handled through a series of steps. We started by retrieving the user's profile to get necessary details like user ID and email. Then, we fetched available flights, selected the most suitable one based on factors like price and duration (flight ID: DA123), and proceeded to book the itinerary. The booking was confirmed with a confirmation number, indicating that all steps are complete and the task is fulfilled.",
+    process_result='Dear Adam, your flight from SFO to JFK on September 1, 2025, has been successfully booked. The selected flight is DA123, departing at 1:00 AM with a duration of 3 hours and a price of $200.00. Your confirmation number is ztf51pme. Please keep this number for your records and check your email at adam@gmail.com for further details.'
+)

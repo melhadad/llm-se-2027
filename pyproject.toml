@@ -1,0 +1,21 @@
+[project]
+name = "llm-se-2027"
+version = "0.1.0"
+description = "Course materials for Software Engineering with AI (LLM-SE 2027), BGU"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+    "jupyterlab>=4.5.0",
+    "ruff>=0.14.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100

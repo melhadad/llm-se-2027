@@ -1,0 +1,69 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+.Python
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# ---- uv ----
+# uv.lock IS committed (reproducible envs); caches are not.
+.uv-cache/
+
+# ---- Tooling / caches ----
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# ---- MLflow / experiment tracking ----
+mlruns/
+mlartifacts/
+*.db
+
+# ---- Large course datasets & derived indexes (not for git) ----
+dspy/wiki.abstracts.2017.jsonl
+dspy/wiki.abstracts.2017.tar.gz
+dspy/wiki.abstracts.2017.bm25/
+*.npy
+*.tar.gz
+
+# ---- Editors / OS ----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+*.swp
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# ---- Office lock files ----
+~$*
