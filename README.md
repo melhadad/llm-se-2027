@@ -10,7 +10,7 @@ Engineering with AI*, Ben-Gurion University.
 | [`syllabus-software-engineering-with-ai.md`](syllabus-software-engineering-with-ai.md) | Current syllabus |
 | [`Intro/`](Intro/) | Introductory slides: course project, PRDs, GitHub Spec-Kit |
 | [`LLMs/`](LLMs/) | LLM fundamentals: tokenization, transformers, decoding, pre/post-training, prompting |
-| [`dspy/`](dspy/) | DSPy demos, MCP client/server examples, MLflow tracing (separate uv project, Python 3.11) |
+| [`dspy/`](dspy/) | DSPy demos, MCP client/server examples, MLflow tracing (separate uv project) |
 
 ## Setup
 
@@ -22,13 +22,14 @@ uv sync            # creates .venv and installs the dev group
 uv run jupyter lab # launch notebooks
 ```
 
-The `dspy/` demos are a **separate uv project** pinned to Python 3.11 (some of
-its dependencies do not yet build on 3.14). Work on them from that directory:
+The `dspy/` demos are a **separate uv project** (also on Python 3.14, with its
+own lockfile, since they pull in a much heavier dependency set). Work on them
+from that directory:
 
 ```bash
 cd dspy
 uv sync
-uv run python hello.py
+uv run python discover_mcp_tools.py
 ```
 
 ## Large files

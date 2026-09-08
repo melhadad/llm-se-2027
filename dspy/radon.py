@@ -73,7 +73,7 @@ def plot_radon_theorem():
     ax.set_zticks([])
 
     # Title and Equation
-    plt.title("Radon's Theorem in $\mathbb{R}^3$ (5 Points)", fontsize=16)
+    plt.title(r"Radon's Theorem in $\mathbb{R}^3$ (5 Points)", fontsize=16)
     
     # Add text for the sets and intersection equation
     plt.figtext(0.5, 0.05, 
