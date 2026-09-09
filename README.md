@@ -8,7 +8,7 @@ Engineering with AI*, Ben-Gurion University.
 | Path | What's in it |
 | --- | --- |
 | [`syllabus-software-engineering-with-ai.md`](syllabus-software-engineering-with-ai.md) | Current syllabus |
-| [`Intro/`](Intro/) | Introductory slides: course project, PRDs, GitHub Spec-Kit |
+| [`Intro/`](intro.md) | course scope and introduction |
 | [`LLMs/`](LLMs/) | LLM fundamentals: tokenization, transformers, decoding, pre/post-training, prompting |
 | [`dspy/`](dspy/) | DSPy demos, MCP client/server examples, MLflow tracing (separate uv project) |
 
