@@ -34,7 +34,7 @@ Therefore, it is important to plan for continuous performance verification by:
 
 See **Trustworthy AI: From Principles to Practices**, [Bo Li](https://dl.acm.org/doi/10.1145/3555803# "Bo Li"), [Peng Qi](https://dl.acm.org/doi/10.1145/3555803# "Peng Qi"), [Bo Liu](https://dl.acm.org/doi/10.1145/3555803# "Bo Liu"), [Shuai Di](https://dl.acm.org/doi/10.1145/3555803# "Shuai Di"), [Jingen Liu](https://dl.acm.org/doi/10.1145/3555803# "Jingen Liu"), [Jiquan Pei](https://dl.acm.org/doi/10.1145/3555803# "Jiquan Pei"), [Jinfeng Yi](https://dl.acm.org/doi/10.1145/3555803# "Jinfeng Yi"), [Bowen Zhou](https://dl.acm.org/doi/10.1145/3555803# "Bowen Zhou"), ACM Computing Surveys, Jan 2023, [https://dl.acm.org/doi/10.1145/3555803](https://dl.acm.org/doi/10.1145/3555803) 
 
-![[types-of-ai-trustworthiness.jpg]]
+![Relation between different aspects of AI trustworthiness](../media/types-of-ai-trustworthiness.jpg)
 Relation between different aspects of AI trustworthiness: performance, security, robustness, generalization, explainability, transparency, accountability and privacy.
 
 Beyond performance, multiple aspects of the AI system behavior contribute to the level of trust users award it:

@@ -52,7 +52,7 @@ where $U = (u_{-k}, \dots, u_{-1})$ is the context vector of the last $k$ tokens
 
 All the parameters ($W_e, W_p)$ and those of the transformer block are trained by the end to end optimization of the LM over the corpus.
 
-[[02.5 Transformers]] provides more technical details on this architecture.
+[02.5 Transformers](02.5%20Transformers.md) provides more technical details on this architecture.
 
 
 

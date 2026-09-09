@@ -28,7 +28,7 @@ It provides short Python code examples using the huggingface transformers librar
 
 The parameters related to decoding are usually made available when using LLMs through a public API (most frequently top-p, temperature).
 
-![[Pasted image 20251108203043.png]]
+![OpenAI chat completion decoding parameters](../media/openai-chat-parameters.png)
 
 **Speculative Decoding** has been introduced in 2023 and allows significant speed-up of the decoding process by estimating the relative difficulty of predicting different tokens in the generated sequence and delegating "easy tokens" to a fast-and-cheap LLM.  It is the algorithm most currently used in production.
 

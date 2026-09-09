@@ -31,11 +31,11 @@ The successive stages of training current LLMs (2025) are:
 
 4. **Reasoning RL (Reinforced Reasoning)**
 - **Objective:** To enhance the model's capability for complex, multi-step logical thinking. This phase is focused on improving the model's ability to generate coherent, multi-step reasoning processes, often using process-based rewards (e.g., chain-of-thought reasoning) rather than just outcome-based evaluations.  
-  Particularly, Reinforcement Learning (RL) or post-training is necessary to make complex prompting strategies effective such as CoT, Tools Usage or PoT. (See [[06 Prompting Strategies]])
+  Particularly, Reinforcement Learning (RL) or post-training is necessary to make complex prompting strategies effective such as CoT, Tools Usage or PoT. (See [06 Prompting Strategies](06%20Prompting%20Strategies.md))
 - **Method:** Advanced RL methods are applied to guide the model toward better performance on reasoning benchmarks, serving as a pivotal force for advancing model reasoning capabilities.
 
 
-![[Pasted image 20251109084811.png]]
+![The 4 stages of training an LLM from scratch](../media/4-stages-of-llm-training.png)
 (From https://blog.dailydoseofds.com/p/4-stages-of-training-llms-from-scratch, Jul 2025)
 
 

@@ -5,13 +5,13 @@ tags:
 course: LLM-SE 2026
 semester: Fall 2026
 ---
-Given a fully-trained LLM (instruction fine-tuned and post-trained for human preferences and reasoning patterns and tools usage), prompting strategies are algorithms used at inference-time (that is, these do not include training or weight-updates) to drive the process of generating an answer given a task.  The prompting strategies determine how to encode the task parameters into a prompt (or multiple prompts), which sampling parameters to use for decoding (see [[03 LM Decoding Strategies and Parameters]]), and how to compute the final answer to the task at hand.  
+Given a fully-trained LLM (instruction fine-tuned and post-trained for human preferences and reasoning patterns and tools usage), prompting strategies are algorithms used at inference-time (that is, these do not include training or weight-updates) to drive the process of generating an answer given a task.  The prompting strategies determine how to encode the task parameters into a prompt (or multiple prompts), which sampling parameters to use for decoding (see [03 LM Decoding Strategies and Parameters](03%20LM%20Decoding%20Strategies%20and%20Parameters.md)), and how to compute the final answer to the task at hand.  
 Prompting strategies are implemented as libraries that invoke an underlying LLM API.
 ### Zero-shot / One-shot / Few-shot
-![[Pasted image 20251108212823.png]]
-![[Pasted image 20251108212841.png]]
+![Zero-shot prompting](../media/prompting-zero-shot.png)
+![One-shot prompting](../media/prompting-one-shot.png)
 
-![[Pasted image 20251108212855.png]]
+![Few-shot prompting](../media/prompting-few-shot.png)
 ## In-Context Learning
 
 The few-shot prompting approach is surprising: it indicates that the LLM is capable of generalizing from a few examples.  But this generalization comes without weight update - it is performed completely at inference time, in contrast to previously known forms of machine learning.  This mechanism is known as *in-context learning* (ICL).

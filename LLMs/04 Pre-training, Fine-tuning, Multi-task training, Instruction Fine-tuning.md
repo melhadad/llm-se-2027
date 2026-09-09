@@ -47,13 +47,13 @@ The T5 approach [Raffel et al, 2020] extended the analysis of multi-tasking by f
 Another innovation of the T5 approach was to introduce a common uniform text-to-text format to encode all of the downstream tasks, including classification, QA, and span identification (such as reference resolution). The benefit of this approach is that a single uniform cross-entropy loss is used for all tasks. Different tasks at training time by prefixing the sample data with a task description prefix. This prefix is similar to the usage of prompting in zero-shot learning that emerged in later work.
 
 This is a typical representation of how a task is encoded in this format (from [Brown et al 2020]):
-![[Pasted image 20251108211207.png]]
+![Text-to-text task encoding format (Brown et al 2020)](../media/text-to-text-task-format.png)
 
 The T5 experiments demonstrated that multi-task performance using fine-tuning is achievable only after a certain scale is reached: both in terms of number of parameters in the model, but also in the size of the training data. The authors introduced the C4 dataset, which is a clean curation of Web material with a scale of approximately 100 that of Wikipedia. Experiments report performance on 32 tasks for model sizes ranging from 220M to 11Bn parameters. The largest model T5-11b reported new state of the art results  for 26 tasks.
 
 The following diagram illustrates this cross-task generalization (from [Sanh et al 2022]):
 
-![[Pasted image 20251108211436.png]]
+![Task-level generalization across different tasks with T0 (Sanh et al 2022)](../media/multi-task-generalization.png)
 
 Multi-task training has since then kept up with increasingly larger number of tasks:
 
