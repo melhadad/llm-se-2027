@@ -57,7 +57,7 @@ By the end of the course, students will be able to:
    decoding, sampling parameters, attention cost, KV and prefix caching,
    context-window behavior and set API parameters deliberately, predicting the
    effect on output, cost, latency, and reproducibility.
-2. **Explain the how coding agents work**: agent components (loop, tool invocation,
+2. **Explain how coding agents work**: agent components (loop, tool invocation,
    context assembly and compaction, delegation and permission boundaries); 
    implement a working tool-using agent from scratch against an LLM API.
 3. **Build LLM-powered features as typed components** with structured output,
@@ -66,12 +66,12 @@ By the end of the course, students will be able to:
 4. **Design and run evaluation** for both stochastic components and agent
    output: design evaluations with datasets, rubrics, LLM judges; 
    calibrate evaluations against human labels; 
-   understand agreement metrics; introduce regression suites in Continuous Integration.
+   understand agreement metrics; introduce regression suites in Continuous Integration (CI).
 5. **Produce and critique requirements artifacts** in standard formats: use
    cases, user stories with acceptance criteria, structured specifications.
    Distinguish needs, requirements, and design decisions; Classify
-   functional requirements, quality attributes and constraints; Assess
-   each for verifiability.
+   functional requirements, quality attributes and constraints; 
+   Assess each for verifiability.
 6. **Establish and maintain traceability** from requirement through design and
    code to test, perform impact analysis under change, and explain the
    difference between traceability a human maintains and traceability 
