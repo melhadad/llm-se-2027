@@ -413,18 +413,16 @@ Statistical acceptance versus binary pass/fail.
 Define project quality rubrics against which the project will be graded in W12.
 OpenTelemetry.
 
-**Break the seal.** `data/snapshot/test.json` has been in your repository since
+**Evaluate on test.json.** `data/snapshot/test.json` has been in your repository since
 W1 and nobody has looked at it. Score your triage feature on it, once, and
 compare that number to what you got on `dev.json`.
 
-Two things to notice, and they are the lesson rather than an inconvenience.
-First, the gap between the two numbers is what tuning against a set you can see
-buys you, and it is not skill. Second, the only gold column in that file is
-`gold_type`, and it is null for roughly half the records: `gold_severity`,
+* The gap between the two numbers is what tuning against a set you can see
+buys you. 
+* The only gold column in that file is `gold_type`, and it is null for roughly half the records: `gold_severity`,
 `gold_has_reproduction_steps` and `gold_duplicate_candidate` are null in every
-record in the dataset. You are about to discover that most of what your feature
-outputs cannot be scored at all without labels somebody has to make — which is
-the real cost of evaluation, and the reason W7 exists.
+record in the dataset. Most of what your feature outputs cannot be scored at all without labels 
+somebody has to make — which is the real cost of evaluation, and the reason W7 exists.
 
 ---
 
@@ -674,12 +672,14 @@ Participation will count towards the final grade.
   Software Engineering via Syllabus Analysis*. arXiv:2608.05898
 - *Configuration Smells in AGENTS.md Files* (2026). *(verify — arXiv ID
   2606.15828)*
-- https://themodernsoftware.dev/ course with similar objectives (Stanford fall 2026)
-
 
 ### Trustworthiness framework
 
 - Trustworthy AI: From Principles to Practices**, [Bo Li](https://dl.acm.org/doi/10.1145/3555803# "Bo Li"), [Peng Qi](https://dl.acm.org/doi/10.1145/3555803# "Peng Qi"), [Bo Liu](https://dl.acm.org/doi/10.1145/3555803# "Bo Liu"), [Shuai Di](https://dl.acm.org/doi/10.1145/3555803# "Shuai Di"), [Jingen Liu](https://dl.acm.org/doi/10.1145/3555803# "Jingen Liu"), [Jiquan Pei](https://dl.acm.org/doi/10.1145/3555803# "Jiquan Pei"), [Jinfeng Yi](https://dl.acm.org/doi/10.1145/3555803# "Jinfeng Yi"), [Bowen Zhou](https://dl.acm.org/doi/10.1145/3555803# "Bowen Zhou"), ACM Computing Surveys, Jan 2023, [https://dl.acm.org/doi/10.1145/3555803](https://dl.acm.org/doi/10.1145/3555803) 
+
+### Relevant Courses
+- https://themodernsoftware.dev/ course with similar objectives (Stanford fall 2026)
+- https://www.cmu-agents.com/#/schedule (CMU Fall 2026)
 
 ---
 
