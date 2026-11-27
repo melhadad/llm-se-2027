@@ -10,6 +10,7 @@ Engineering with AI*, Ben-Gurion University.
 | [`syllabus-software-engineering-with-ai.md`](syllabus-software-engineering-with-ai.md) | Current syllabus |
 | [`Intro/`](intro.md) | course scope and introduction |
 | [`LLMs/`](LLMs/) | LLM fundamentals: tokenization, transformers, decoding, pre/post-training, prompting |
+| [`evaluation/`](evaluation/) | Evaluation: claims, datasets, rubrics, threshold contracts, CI regression suites, statistical acceptance |
 | [`dspy/`](dspy/) | DSPy demos, MCP client/server examples, MLflow tracing (separate uv project) |
 
 ## Setup
